@@ -1,0 +1,390 @@
+/* Global Rules */
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+
+:root {
+    --dark-color: #1e272e;
+    --main-color: #10ac84;
+    --alt-main-color: #0be881;
+    --light-color: #d2dae2;
+    --main-transition: all 0.4s;
+}
+body {
+    direction: rtl !important;
+    font-family: 'Tajawal', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+    color: var(--dark-color);
+    font-size: 14px;
+}
+
+button {
+    box-shadow: none !important;
+    border: none !important;
+    cursor: pointer !important;
+}
+.btn {
+    border-radius: 8 !important;
+}
+input, textarea {
+    direction: rtl;
+    text-align: right;
+}
+
+/* Topbar */
+.topbar {
+    background: var(--main-color);  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, var(--main-color), var(--alt-main-color));  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, var(--main-color), var(--alt-main-color)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    text-decoration: none;
+}
+.topbar .inner {
+    text-decoration: none;
+}
+.topbar .inner p {
+    color: #fff;
+    text-align: center; 
+    padding: 15px 10px;
+    margin-bottom: 0;
+}
+
+
+/* Navbar */
+.navbar {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.navbar .navbar-nav .nav-link {
+    padding: 10px 20px;
+    color: var(--dark-color);
+    font-weight: 500;
+    font-size: 16px;
+}
+@media(max-width: 768px) {
+    .navbar .navbar-nav {
+        background-color: var(--dark-color);
+    }
+    .navbar .navbar-nav .nav-link {
+        color: var(--light-color);
+        border-bottom: rgba(255, 255, 255, 0.144) solid 0.5px;
+    }
+    .navbar .navbar-nav .nav-link:hover {
+        background-color: var(--main-color);
+        color: #fff !important;
+    }
+}
+.navbar .navbar-nav .nav-link:hover {
+    color: var(--main-color);
+}
+.navbar .navbar-nav .dropdown-toggle {
+    font-weight: bold;
+}
+.navbar .navbar-nav .dropdown-menu {
+    border-top: var(--main-color) solid 5px;
+    padding: 0;
+    width: 250px;
+}
+
+@media(max-width: 768px) {
+    .navbar .navbar-nav .dropdown-menu {
+        width: 100%;
+        background-color: var(--dark-color);
+    }
+}
+@media(max-width: 992px) {
+    .navbar .navbar-nav .dropdown-menu {
+        width: 100%;
+        background-color: var(--dark-color);
+    }
+}
+.navbar .navbar-nav .dropdown-menu .dropdown-item {
+    font-size: 14px;
+    padding: 10px;
+    transition: var(--main-transition);
+}
+@media(max-width: 768px) {
+    .navbar .navbar-nav .dropdown-menu .dropdown-item {
+        color: var(--light-color);
+    }
+}
+.navbar .navbar-nav .dropdown-menu .dropdown-item:hover {
+    background-color: var(--main-color);
+    color: var(--light-color);
+    padding-right: 20px;
+}
+.navbar .navbar-nav .social {
+    font-size: 18px;
+    border-radius: 5px;
+}
+.navbar .navbar-nav .social:hover {
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+@media(max-width: 768px) {
+    .navbar .navbar-nav .social {
+        display: none;
+    }
+}
+@media(max-width: 992px) {
+    .navbar .navbar-nav .social {
+        display: none;
+    }
+}
+
+/* Contact Phone */
+.contact-phone {
+    direction: ltr;
+}
+
+/* Brands */
+.brands {
+    margin-top: 50px;
+}
+.brands .box {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px 10px;
+    margin: 20px 10px;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    min-width: 100%;
+}
+.brands .box img {
+    padding-bottom: 40px;
+}
+.brands .box a {
+    text-decoration: none;
+}
+.brands .box h3 {
+    font-weight: bold;
+    font-size: 20px;
+}
+.brands .box h3 a {
+    color: var(--dark-color);
+    transition: var(--main-transition);
+}
+.brands .box h3 a:hover {
+    color: var(--main-color);
+}
+.brands .box .go-btn {
+    color: var(--dark-color);
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    font-weight: bold;
+    transition: var(--main-transition);
+}
+.brands .box .go-btn:hover {
+    background-color: #10ac8536;
+    color: var(--main-color);
+}
+
+/* TopFooter */
+.topfooter {
+    background-color: var(--dark-color);
+    padding: 80px 0;
+}
+.topfooter > * {
+    color: var(--light-color);
+}
+.topfooter .section-links {
+    display: flex;
+    justify-content: space-between;
+}
+@media(max-width: 768px) {
+    .topfooter .section-links {
+        flex-direction: column;
+    }
+}
+@media(max-width: 992spx) {
+    .topfooter .section-links {
+        flex-direction: column;
+    }
+}
+.topfooter .section-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.topfooter .section-links li {
+    padding-bottom: 10px;
+}
+.topfooter .section-links a {
+    text-decoration: none;
+    color: var(--light-color);
+    transition: var(--main-transition);
+}
+.topfooter .section-links a:hover {
+    color: var(--main-color);
+}
+.topfooter h5 {
+    padding: 10px;
+    padding-right: 0;
+}
+.topfooter .info {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.topfooter .info li {
+    padding-bottom: 10px;
+}
+.topfooter .info a {
+    text-decoration: none;
+    color: var(--light-color);
+    transition: var(--main-transition);
+}
+.topfooter .info a:hover {
+    color: var(--main-color);
+}
+
+/* Main Footer */
+.main-footer {
+    background-color: #141a1f;
+}
+.main-footer p {
+    color: var(--light-color);
+    margin-bottom: 0 !important;
+}
+.main-footer a {
+    text-decoration: none;
+    color: var(--main-color);
+}
+.main-footer .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+@media(max-width: 768px) {
+    .main-footer .inner {
+        flex-direction: column;
+    }
+}
+
+
+/* Phones */
+.phonecall {
+
+    animation: jittery 4s infinite,heartbeat 1s infinite;
+}
+@keyframes jittery{
+    5%,50%{transform:scale(1)}
+    10%{transform:scale(.9)}
+    15%{transform:scale(1.15)}
+    20%{transform:scale(1.15) rotate(-5deg)}
+    25%{transform:scale(1.15) rotate(5deg)}
+    30%{transform:scale(1.15) rotate(-3deg)}
+    35%{transform:scale(1.15) rotate(2deg)}
+    40%{transform:scale(1.15) rotate(0)}
+}
+@keyframes heartbeat{
+    50%{transform:scale(1.1)}
+}
+.phones {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    text-align: center;
+    width: 230px;
+    margin: auto;
+}
+.phones a {
+    font-size: 22px;
+    font-weight: bold;
+    padding: 5px;
+    background: #141a1fe8;
+    border: 1px solid #1e272e;
+    margin-top: 2px;
+    border-radius: 4px;
+    opacity: 0.9;
+    position: relative;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* ScrollUp */
+#scrollUp {
+    background-color: var(--dark-color);
+    bottom: 15px;
+    color: var(--light-color);
+    font-size: 25px;
+    height: 40px;
+    line-height: 40px;
+    left: 13px;
+    text-align: center;
+    transition: var(--main-transition);
+    width: 40px;
+}
+#scrollUp:hover {
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+/* Whatsapp Button */
+.whatsapp-button {
+    position: fixed;
+    z-index: 1;
+    top: 500px;
+    left: 0;
+    right: 10px;
+}
+.whatsapp-button img {
+    transition: var(--main-transition);
+}
+.whatsapp-button img:hover {
+    transform: rotate(45deg);
+}
+
+/* =================================================================================================== */
+
+/* about */
+.content {
+    margin-top: 50px;
+}
+.content h1 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.content p {
+    font-size: 16px;
+}
+.content a {
+    text-decoration: none;
+    color: var(--main-color);
+    font-weight: bold;
+}
+.content a:hover {
+    color: var(--alt-main-color);
+} 
+
+
+/* ======================================================================================================= */
+
+/* Contact */
+.contact-us {
+    background-image: url('../img/contact-us-image.jpg');
+    background-size: cover;
+    min-height: 600px;
+    overflow: hidden;
+}
+.contact-us .overlay {
+    background-color: #141a1fad;
+    min-height: 600px;
+    overflow: hidden;
+}
+.contact-us > * {
+    color: #fff;
+}
+.contact-us .btn-send {
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 15px;
+    font-weight: bold;
+}
