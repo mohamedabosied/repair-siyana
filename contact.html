@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مركز صيانة الاجهزة المنزلية المعتمد</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" type="image/x-icon" href="img/repair-siyana-favicon.png">
+</head>
+<body>
+    <!-- Start Topbar -->
+    <div class="topbar">
+        <a class="inner" href="tel:+201202233108">
+            <p>
+                <i class="fa fa-bullhorn" aria-hidden="true"></i> لطلب المعاينة او لأي استفسار اضغط هنا
+            </p>
+        </a>
+    </div>
+    <!-- End Topbar -->
+
+    <!-- Start Navbar -->
+    <div class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+        <div class="container-fluid">
+            <a href="index.html" class="navbar-brand"><img src="img/repair-siyana-logo.png" width="200px" alt="مركز صيانة الاجهزة المنزلية"></a>
+            <button class="navbar-toggler" type="button" data-bs-target="#main-nav" data-bs-toggle="collapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="main-nav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">الرئيسية</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      مراكز الصيانة
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">صيانة سامسونج</a></li>
+                      <li><a class="dropdown-item" href="#">صيانة ال جي</a></li>
+                      <li><a class="dropdown-item" href="#">صيانة توشيبا</a></li>
+                      <li><a class="dropdown-item" href="#">صيانة فريش</a></li>
+                      <li><a class="dropdown-item" href="#">صيانة تورنيدو</a></li>
+                      <li><a class="dropdown-item" href="#">صيانة يونيون اير</a></li>
+                      <li><a class="dropdown-item" href="#">صيانة سوني</a></li>
+                      <li><a class="dropdown-item" href="#">صيانة فيليبس</a></li>
+                      <li><a class="dropdown-item" href="#">صيانة كاريير</a></li>
+                      <li><a class="dropdown-item" href="#">صيانة شارب</a></li>
+                      <li><a class="dropdown-item" href="#">صيانة هايسنس</a></li>
+                      <li><a class="dropdown-item" href="#">صيانة بيكو</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html">عن مركز صيانة الاجهزة المنزلية</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="">إتصل بنا</a>
+                  </li>
+                </ul>
+                
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link social" href="https://www.facebook.com/repairsiyana"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link social" href="https://wa.me/201010247703"><i class="fa fa-whatsapp"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link social" href="https://www.facebook.com/repairsiyana"><i class="fa fa-instagram"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link social" href="https://www.facebook.com/repairsiyana"><i class="fa fa-youtube"></i></a>
+                    </li>
+                </ul>
+              </div>
+        </div>
+    </div>
+    <!-- End Navbar -->
+
+    <!-- Start Contact Us -->
+    <div class="contact-us">
+        <div class="overlay pt-5 pb-5">
+            <div class="container">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-md-6 col-12">
+                        <h2>إتصل بنا</h2>
+                        <p class="lead">إذا كان لديك اي استفسار لا تتردد في الاتصال بنا.</p>
+                        <ul>
+                            <li class="lead">0246070802</li>
+                            <li class="lead">01202233108</li>
+                            <li class="lead">01005680001</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <h2>قم بإرسال لنا رسالة</h2>
+                        <form class="row g-3" onsubmit="sendEmail(); reset(); false;">
+                            <div class="col-md-6">
+                              <input type="text" class="form-control" id="name" placeholder="الاسم" required>
+                            </div>
+                            <div class="col-md-6">
+                              <input type="text" class="form-control" id="phone" placeholder="رقم الهاتف" required>
+                            </div>
+                            <div class="col-md-12">
+                                <input type="email" class="form-control" id="email" placeholder="البريد الالكتروني" required>
+                              </div>
+                            <div class="col-md-12">
+                                <textarea class="form-control" cols="30" rows="10" placeholder="الرسالة"></textarea>
+                            </div>
+                            <div class="col-md-12">
+                                <button type="submit" class="btn btn-send">إرسال الرسالة <i class="fa fa-paper-plane"></i></button>
+                            </div>
+                          </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Contact Us -->
+
+    <!-- Start Topfooter -->
+    <div class="topfooter">
+        <div class="container">
+            <div class="row justify-content-start align-items-center gap-4">
+                <div class="col-md-3 col-12">
+                    <h5 class="fw-bold">عن مركز صيانة الاجهزة المنزلية المعتمد</h5>
+                    <p>
+                        نقدم لعملائنا خدمات الصيانة التى تصل الى عدة سنوات مع توفير قطع الغيار الاصلية لضمان جودتها فى العمل، وعدم التعرض الى نفس المشكلة اكثر من مرة، الصيانة لجميع الاجهزة الكهربائية تتم بشكل سريع ومتميز.
+                    </p>
+                </div>
+                <div class="col-md-5 col-12">
+                    <h5 class="fw-bold">الاقسام</h5>
+                    <div class="section-links">
+                        <ul>
+                            <li><a href="">صيانة سامسونج</a></li>
+                            <li><a href="">صيانة ال جي</a></li>
+                            <li><a href="">صيانة توشيبا</a></li>
+                            <li><a href="">صيانة فريش</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="">صيانة تورنيدو</a></li>
+                            <li><a href="">صيانة يونيون اير</a></li>
+                            <li><a href="">صيانة سوني</a></li>
+                            <li><a href="">صيانة فيليبس</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="">صيانة كاريير</a></li>
+                            <li><a href="">صيانة شارب</a></li>
+                            <li><a href="">صيانة هايسنس</a></li>
+                            <li><a href="">صيانة بيكو</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-12">
+                    <h5 class="fw-bold">كن دائماً علي تواصل معنا!</h5>
+                    <ul class="info">
+                        <li><a href="tel:+201202233108"><i class="fa fa-phone"></i> 01202233108</a></li>
+                        <li><i class="fa fa-envelope-open"></i> support@repair-siyana.com</li>
+                        <li><a href=""><i class="fa fa-facebook"></i> صفحة الفيسبوك</a></li>
+                        <li><i class="fa fa-clock-o"></i> مفتوح طوال ايام الأسبوع</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Topfooter -->
+
+    <!-- Start Main Footer -->
+    <div class="main-footer">
+        <div class="container">
+            <div class="inner">
+                <p>
+                    جميع الحقوق محفوظة &copy; <a href="index.html">مركز صيانة الاجهزة المنزلية المعتمد</a>
+                </p>
+                <p>
+                    تم تصميم الموقع بواسطة: <a href="https://wa.me/201010247703" target="_blank">Ruleofyou Marketing</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- End Main Footer -->
+
+    <!-- phones -->
+    <div class="phones phonecall">
+        <a href="tel:01202233108">
+            <svg class="bi bi-phone" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M11 1H5a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"></path>
+                <path fill-rule="evenodd" d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"></path>
+            </svg>
+            01202233108
+            <svg class="bi bi-phone" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M11 1H5a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"></path>
+                <path fill-rule="evenodd" d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"></path>
+            </svg>
+        </a>
+    </div>
+
+    <!-- Scroll to top -->
+    <a id="scrollUp" href="#top" style="position: fixed; z-index: 2147483647; display: block;"><i class="fa fa-angle-up"></i></a>
+
+    <!-- Whatsapp Button -->
+    <div class="whatsapp-button">
+        <a href="https://wa.me/201202233108"><img src="img/whatsapp.png" class="rounded-circle shadow" width="70px" alt=""></a>
+    </div>
+
+    <!-- Js -->
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        // Contact Us Send Function to Email
+        function sendEmail(){
+            Email.send({
+                Host : "smtp.gmail.com",
+                Username : "mohamedsayedofficial1999@gmail.com",
+                Password : "Janseenjanseen1",
+                To : 'lifeisgoodcairo@gmail.com',
+                From : document.getElementById("email").value,
+                Subject : "مركز صيانة الاجهزة المنزلية المعتمد",
+                Body : "And this is the body"
+            }).then(
+            message => alert("Alert Send Successfuly")
+            );
+        }
+    </script>
+</body>
+</html>
